@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChefAtHome: rețete, filtre și meniu săptămânal">
+  <title>Profil | ChefAtHome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">ChefAtHome</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li>
+          <a href="recipes.html">Rețete</a>
+          <ul>
+            <li><a href="recipes.html#mic-dejun">Mic dejun</a></li>
+            <li><a href="recipes.html#fel-principal">Fel principal</a></li>
+            <li><a href="recipes.html#desert">Deserturi</a></li>
+          </ul>
+        </li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="profile.html" class="active">Profil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Profilul tău</h1>
+
+    <section id="login">
+      <h2>Autentificare</h2>
+      <label for="user">Utilizator</label>
+      <input type="text" id="user" placeholder="ex: chef">
+      <label for="pass">Parolă</label>
+      <input type="password" id="pass">
+      <a class="btn" href="profile.html">Intră în cont</a>
+    </section>
+
+    <section>
+      <h2>Salut, chef!</h2>
+      <div class="panel">
+        <article id="chart">
+          <h3>Favorite pe categorii</h3>
+          <div class="bars">
+            <div class="col">
+              <p class="bar v0">0</p>
+              <p>Mic dejun</p>
+            </div>
+            <div class="col">
+              <p class="bar v0">0</p>
+              <p>Fel principal</p>
+            </div>
+            <div class="col">
+              <p class="bar v0">0</p>
+              <p>Desert</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="avg">
+          <h3>Aport caloric mediu</h3>
+          <p class="big">0</p>
+          <p>kcal / rețetă favorită</p>
+        </article>
+      </div>
+
+      <h2>Rețete favorite</h2>
+      <p>Nu ai nicio favorită încă.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>ChefAtHome &copy; 2026. Gătește acasă, planifică din timp.</p>
+  </footer>
+</body>
+</html>

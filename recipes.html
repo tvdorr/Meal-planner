@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChefAtHome: rețete, filtre și meniu săptămânal">
+  <title>Rețete | ChefAtHome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">ChefAtHome</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li>
+          <a href="recipes.html" class="active">Rețete</a>
+          <ul>
+            <li><a href="recipes.html#mic-dejun">Mic dejun</a></li>
+            <li><a href="recipes.html#fel-principal">Fel principal</a></li>
+            <li><a href="recipes.html#desert">Deserturi</a></li>
+          </ul>
+        </li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="profile.html">Profil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Catalog de rețete</h1>
+    <div class="cols">
+      <aside id="filters">
+        <h2>Filtre</h2>
+        <fieldset>
+          <legend>Categorie</legend>
+          <label><input type="radio" name="cat" checked> Toate</label>
+          <label><input type="radio" name="cat" id="c-breakfast"> Mic dejun</label>
+          <label><input type="radio" name="cat" id="c-main"> Fel principal</label>
+          <label><input type="radio" name="cat" id="c-dessert"> Desert</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Dificultate</legend>
+          <label><input type="radio" name="dif" checked> Toate</label>
+          <label><input type="radio" name="dif" id="d-easy"> Ușor</label>
+          <label><input type="radio" name="dif" id="d-medium"> Mediu</label>
+          <label><input type="radio" name="dif" id="d-hard"> Dificil</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Timp de preparare</legend>
+          <label><input type="radio" name="tim" checked> Oricât</label>
+          <label><input type="radio" name="tim" id="t-30"> Sub 30 de minute</label>
+          <label><input type="radio" name="tim" id="t-60"> Sub o oră</label>
+        </fieldset>
+      </aside>
+
+      <section id="results">
+        <span id="mic-dejun"></span>
+        <span id="fel-principal"></span>
+        <span id="desert"></span>
+        <h2>Rețete</h2>
+        <div class="grid">
+          <article class="card breakfast easy">
+            <p class="emoji">🥞</p>
+            <h3>Clătite cu brânză și mărar</h3>
+            <p class="meta">
+              <span class="badge time">20 min</span>
+              <span class="badge diff">Ușor</span>
+              <span class="badge kcal">340 kcal</span>
+            </p>
+            <p>Clătite subțiri umplute cu brânză proaspătă și mărar.</p>
+            <details>
+              <summary>Ingrediente</summary>
+              <p>făină, ouă, lapte, brânză de vaci, mărar.</p>
+            </details>
+            <p class="actions">
+              <a class="btn fav" href="profile.html">♡ Favorit</a>
+              <a class="btn" href="planner.html">+ Planner</a>
+            </p>
+          </article>
+
+          <article class="card breakfast easy 2">
+            <p class="emoji">🍳</p>
+            <h3>Omletă cu legume</h3>
+            <p class="meta">
+              <span class="badge time">10 min</span>
+              <span class="badge diff">Ușor</span>
+              <span class="badge kcal">260 kcal</span>
+            </p>
+            <p>Un mic dejun rapid, plin de proteine și culoare.</p>
+            <details>
+              <summary>Ingrediente</summary>
+              <p>ouă, ardei, roșii, ceapă verde.</p>
+            </details>
+            <p class="actions">
+              <a class="btn fav" href="profile.html">♡ Favorit</a>
+              <a class="btn" href="planner.html">+ Planner</a>
+            </p>
+          </article>
+
+          <article class="card main medium">
+            <p class="emoji">🍲</p>
+            <h3>Ciorbă de perișoare</h3>
+            <p class="meta">
+              <span class="badge time">60 min</span>
+              <span class="badge diff">Mediu</span>
+              <span class="badge kcal">410 kcal</span>
+            </p>
+            <p>Ciorbă acrișoară clasică, cu perișoare moi.</p>
+            <details>
+              <summary>Ingrediente</summary>
+              <p>carne tocată, orez, morcov, ceapă, borș, leuștean.</p>
+            </details>
+            <p class="actions">
+              <a class="btn fav" href="profile.html">♡ Favorit</a>
+              <a class="btn" href="planner.html">+ Planner</a>
+            </p>
+          </article>
+
+          <article class="card main easy">
+            <p class="emoji">🍝</p>
+            <h3>Paste cu sos de roșii și busuioc</h3>
+            <p class="meta">
+              <span class="badge time">25 min</span>
+              <span class="badge diff">Ușor</span>
+              <span class="badge kcal">520 kcal</span>
+            </p>
+            <p>Sos simplu, gătit lent, pentru seri grăbite.</p>
+            <details>
+              <summary>Ingrediente</summary>
+              <p>paste, roșii, usturoi, busuioc, parmezan.</p>
+            </details>
+            <p class="actions">
+              <a class="btn fav" href="profile.html">♡ Favorit</a>
+              <a class="btn" href="planner.html">+ Planner</a>
+            </p>
+          </article>
+
+          <article class="card main hard">
+            <p class="emoji">🥬</p>
+            <h3>Sarmale în foi de varză</h3>
+            <p class="meta">
+              <span class="badge time">150 min</span>
+              <span class="badge diff">Dificil</span>
+              <span class="badge kcal">580 kcal</span>
+            </p>
+            <p>Rețeta de sărbătoare, fiartă încet.</p>
+            <details>
+              <summary>Ingrediente</summary>
+              <p>varză murată, carne tocată, orez, ceapă, boia.</p>
+            </details>
+            <p class="actions">
+              <a class="btn fav" href="profile.html">♡ Favorit</a>
+              <a class="btn" href="planner.html">+ Planner</a>
+            </p>
+          </article>
+
+          <article class="card dessert medium">
+            <p class="emoji">🍩</p>
+            <h3>Papanași cu smântână</h3>
+            <p class="meta">
+              <span class="badge time">45 min</span>
+              <span class="badge diff">Mediu</span>
+              <span class="badge kcal">690 kcal</span>
+            </p>
+            <p>Prăjiți aurii, serviți cu smântână și dulceață.</p>
+            <details>
+              <summary>Ingrediente</summary>
+              <p>brânză de vaci, făină, ouă, smântână, dulceață.</p>
+            </details>
+            <p class="actions">
+              <a class="btn fav" href="profile.html">♡ Favorit</a>
+              <a class="btn" href="planner.html">+ Planner</a>
+            </p>
+          </article>
+
+          <article class="card dessert medium">
+            <p class="emoji">🍫</p>
+            <h3>Mousse de ciocolată</h3>
+            <p class="meta">
+              <span class="badge time">30 min</span>
+              <span class="badge diff">Mediu</span>
+              <span class="badge kcal">450 kcal</span>
+            </p>
+            <p>Cremos și aerat, pe gustul iubitorilor de ciocolată.</p>
+            <details>
+              <summary>Ingrediente</summary>
+              <p>ciocolată neagră, ouă, smântână lichidă, zahăr.</p>
+            </details>
+            <p class="actions">
+              <a class="btn fav" href="profile.html">♡ Favorit</a>
+              <a class="btn" href="planner.html">+ Planner</a>
+            </p>
+          </article>
+
+          <article class="card main easy 2">
+            <p class="emoji">🥑</p>
+            <h3>Salată de quinoa cu avocado</h3>
+            <p class="meta">
+              <span class="badge time">20 min</span>
+              <span class="badge diff">Ușor</span>
+              <span class="badge kcal">380 kcal</span>
+            </p>
+            <p>Salată sățioasă, bună și pentru pachetul de la birou.</p>
+            <details>
+              <summary>Ingrediente</summary>
+              <p>quinoa, avocado, castraveți, lămâie, roșii.</p>
+            </details>
+            <p class="actions">
+              <a class="btn fav" href="profile.html">♡ Favorit</a>
+              <a class="btn" href="planner.html">+ Planner</a>
+            </p>
+          </article>
+
+          <article class="card breakfast easy 3">
+            <p class="emoji">🥣</p>
+            <h3>Terci de ovăz cu fructe</h3>
+            <p class="meta">
+              <span class="badge time">10 min</span>
+              <span class="badge diff">Ușor</span>
+              <span class="badge kcal">300 kcal</span>
+            </p>
+            <p>Începutul de zi care te ține sătul până la prânz.</p>
+            <details>
+              <summary>Ingrediente</summary>
+              <p>ovăz, lapte, banane, afine, miere.</p>
+            </details>
+            <p class="actions">
+              <a class="btn fav" href="profile.html">♡ Favorit</a>
+              <a class="btn" href="planner.html">+ Planner</a>
+            </p>
+          </article>
+
+          <article class="card dessert hard">
+            <p class="emoji">🍰</p>
+            <h3>Cheesecake cu fructe de pădure</h3>
+            <p class="meta">
+              <span class="badge time">90 min</span>
+              <span class="badge diff">Dificil</span>
+              <span class="badge kcal">620 kcal</span>
+            </p>
+            <p>Blat crocant, cremă fină și un topping acrișor.</p>
+            <details>
+              <summary>Ingrediente</summary>
+              <p>biscuiți, cremă de brânză, ouă, zahăr, fructe de pădure.</p>
+            </details>
+            <p class="actions">
+              <a class="btn fav" href="profile.html">♡ Favorit</a>
+              <a class="btn" href="planner.html">+ Planner</a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>ChefAtHome &copy; 2026. Gătește acasă, planifică din timp.</p>
+  </footer>
+</body>
+</html>
